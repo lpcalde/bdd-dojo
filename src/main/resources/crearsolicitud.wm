@@ -1,8 +1,12 @@
 <html>
 <head></head>
 <body>
-	<h1 id="welcome">${welcome}</h1>
+	<table width="70%" align="center">
+		<tr><td align="center"><h1 id="welcome">${welcome}</h1></tr>	
+		<tr><td align="center">
+	
 	<form action="/versolicitud" method="POST">
+	
 		<table>
 			<tr>
 				<td>Area</td> 
@@ -14,7 +18,7 @@
 			</tr>
 			<tr>
 				<td>Descripcion</td>
-				<td><textarea rows="5" id="descripcion" name="descripcion" required ="true"></textarea></td>
+				<td><textarea rows="5" cols="31" id="descripcion" name="descripcion" required ="true"></textarea></td>
 			</tr>
 			<tr>
 				<td colspan=2 align="center"><input type="submit" id="login" value="Guardar Solicitud"/></td>
@@ -22,6 +26,11 @@
 		</table>
 		
 		<h1 id="mensaje">${mensaje}</h1>
+		
+		
 	</form>
+	
+	</td></tr>
+	</table>
 </body>
 </html>
