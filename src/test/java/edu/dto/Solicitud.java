@@ -2,8 +2,7 @@ package edu.dto;
 
 public class Solicitud {
 
-	private String idSolicitud;
-	private String area;
+	private String idSolicitud;	
 	private String titulo;
 	private String descripcion;
 
@@ -13,14 +12,6 @@ public class Solicitud {
 
 	public void setIdSolicitud(String idSolicitud) {
 		this.idSolicitud = idSolicitud;
-	}
-
-	public String getArea() {
-		return area;
-	}
-
-	public void setArea(String area) {
-		this.area = area;
 	}
 
 	public String getTitulo() {
