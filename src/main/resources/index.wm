@@ -3,10 +3,12 @@
 <body>
 	<h1 id="welcome">${welcome}</h1>
 	<form action="/versolicitud" method="POST">
-		Area <input type="text" id="area" name="area"/></br>
-		Titulo <input type="text" id="titulo" name="titulo"/></br>
-		Descripcion <input type="textarea" id="descripcion" name="descripcion"/></br>
+		<table>
+		Area <input type="text" id="area" name="area" required ="true"/></br>
+		Titulo <input type="text" id="titulo" name="titulo" required ="true"/></br>
+		Descripcion <textarea rows="5" id="descripcion" name="descripcion" required ="true"></textarea></br>
 		<input type="submit" id="login" value="Login"/>
+		</table>
 	</form>
 </body>
 </html>
