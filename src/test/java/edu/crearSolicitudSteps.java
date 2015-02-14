@@ -39,5 +39,42 @@ public class crearSolicitudSteps {
 	public void se_generara_un_mensaje_de(String linkId) throws Throwable {
 		 $(By.id(linkId)).click();
 	}
+	
+	/*
+	@Then("^se registrara el ticket$")
+	public void se_registrara_el_ticket() throws Throwable {
+		$(By.id(linkId)).click();
+	}*/
+
+	@Given("^soy un agente disparador a la espera de peticiones$")
+	public void soy_un_agente_disparador_a_la_espera_de_peticiones() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@When("^recibo los datos de una nueva solicitud$")
+	public void recibo_los_datos_de_una_nueva_solicitud() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@Then("^construyo el mensaje de la notificación$")
+	public void construyo_el_mensaje_de_la_notificación() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@Then("^busco el correo electronico del cliente de la solicitud$")
+	public void busco_el_correo_electronico_del_cliente_de_la_solicitud() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
+	@Then("^envio el mensaje construido al correo electronico$")
+	public void envio_el_mensaje_construido_al_correo_electronico() throws Throwable {
+	    // Express the Regexp above with the code you wish you had
+	    throw new PendingException();
+	}
+
 
 }

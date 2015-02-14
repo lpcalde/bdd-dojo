@@ -1,0 +1,25 @@
+<html>
+<head></head>
+<body>
+	<h1 id="welcome">${welcome}</h1>
+	<form action="/versolicitud" method="POST">
+		<table>
+			<tr>
+				<td>Area</td> 
+				<td><input type="text" id="area" name="area" required ="true"/></td>
+			</tr>
+			<tr>
+				<td>Titulo</td>
+				<td><input type="text" id="titulo" name="titulo" required ="true"/></td>
+			</tr>
+			<tr>
+				<td>Descripcion</td>
+				<td><textarea rows="5" id="descripcion" name="descripcion" required ="true"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan=2 align="center"><input type="submit" id="login" value="Guardar Solicitud"/></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

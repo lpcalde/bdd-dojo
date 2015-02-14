@@ -15,8 +15,20 @@ public class Spark {
 
     	get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
-            model.put("welcome", "Creación de Solicitudes");
+            model.put("welcome", "Bienvenidos al sistema de tickets");
             return new ModelAndView(model, "index.wm");
+        }, new VelocityTemplateEngine());
+    	
+    	get("/crearSolicitud", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("welcome", "Creación de Solicitudes");
+            return new ModelAndView(model, "crearSolicitud.wm");
+        }, new VelocityTemplateEngine());
+    	
+    	get("/solicitudesRegistradas", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("welcome", "Creación de Solicitudes");
+            return new ModelAndView(model, "solicitudesRegistradas.wm");
         }, new VelocityTemplateEngine());
     	
     	post("/versolicitud", (request, response) -> {
