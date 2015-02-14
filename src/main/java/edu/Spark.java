@@ -3,12 +3,12 @@ package edu;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 
-
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
-
 import edu.model.Model;
+import edu.dto.Solicitud;
 import static spark.Spark.get;
 import static spark.Spark.post;
 
@@ -25,7 +25,7 @@ public class Spark {
     	get("/crearSolicitud", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("welcome", "Creación de Solicitudes");
-            return new ModelAndView(model, "crearSolicitud.wm");
+            return new ModelAndView(model, "crearsolicitud.wm");
         }, new VelocityTemplateEngine());
     	
     	get("/solicitudesRegistradas", (request, response) -> {
@@ -63,7 +63,19 @@ public class Spark {
     	
     	get("/verlistado", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
+            
+            Model m = new Model();
+            List<Solicitud> listado = m.getSolicitudes(); 
+            
             model.put("welcome", "Listado de Solicitudes");
+            
+            if(listado.isEmpty()){
+            	model.put("mensaje", "No hay solicitudes registradas.");
+            }else{
+            	model.put("listado", listado);
+            }
+            
+            
             return new ModelAndView(model, "listadosolicitudes.wm");
         }, new VelocityTemplateEngine());
 

@@ -20,6 +20,8 @@
 				<td colspan=2 align="center"><input type="submit" id="login" value="Guardar Solicitud"/></td>
 			</tr>
 		</table>
+		
+		<h1 id="mensaje">${mensaje}</h1>
 	</form>
 </body>
 </html>

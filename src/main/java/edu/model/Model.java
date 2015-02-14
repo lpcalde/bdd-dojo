@@ -1,5 +1,7 @@
 package edu.model;
 
+import java.util.List;
+
 import edu.dto.Solicitud;
 import edu.persistente.BD;
 
@@ -9,6 +11,10 @@ public class Model {
 		
 		
 		return null;
+	}
+	
+	public List<Solicitud> getSolicitudes(){
+		return BD.getSolicitudes();
 	}
 	
 	public Integer createSolicitud(String area, String titulo, String descripcion){
