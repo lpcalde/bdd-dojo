@@ -1,2 +1,12 @@
 <h1 id="titulo">${Información de la solicitud}</h1>
 
+<html>
+<head></head>
+<body>
+	<h1 id="saludo">${saludo}</h1>
+	Area: ${area}
+	Titulo: ${titulo}
+	Descripcion: ${descripcion}	
+</body>
+</html>
+
