@@ -26,6 +26,7 @@ public class Spark {
         	String descripcion = request.queryParams("descripcion");
         	        	
         	Map<String, Object> model = new HashMap<>();
+        	model.put("tituloSolicitud", "Información de la solicitud");
        		model.put("area", area);
        		model.put("titulo", titulo);
        		model.put("descripcion", descripcion);
