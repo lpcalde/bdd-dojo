@@ -8,7 +8,7 @@
 				<td><a href="\crearSolicitud">Crear Solicitud</></td> 
 			</tr>
 			<tr>
-				<td><a href="\solicitudesRegistradas">Ver Solicitudes Registradas</></td>
+				<td><a href="\verlistado">Ver Solicitudes Registradas</></td>
 			</tr>
 		</table>
 	</form>

@@ -28,7 +28,7 @@ public class Spark {
             return new ModelAndView(model, "crearsolicitud.wm");
         }, new VelocityTemplateEngine());
     	
-    	get("/solicitudesRegistradas", (request, response) -> {
+    	get("/solicitudesregistradas", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("welcome", "Creación de Solicitudes");
             return new ModelAndView(model, "solicitudesRegistradas.wm");
