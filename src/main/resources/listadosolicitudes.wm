@@ -1,21 +1,12 @@
 <html>
 <head></head>
 <body>
-	<h1 id="saludo">${welcome}</h1>
-	
-	<table>
-		<thead>
-			<tr><th>Titulo</th><th>Descripción</th><th>Estado</th></tr>
-		</thead>
-		<tbody>
-			<tr><td>${titulo}</td><td>${descripcion}</td><td>Activo</td></tr>
-		</tbody>
-	
+
+	<table width="70%" align="center">
+		<tr><td align="center"><h1 id="saludo">${welcome}</td></h1></tr>	
+		<tr><td align="center">${listado}</td></tr>
 	</table>
-	
-	Area: ${area}
-	Titulo: ${titulo}
-	Descripcion: ${descripcion}	
+		
 </body>
 </html>
 
