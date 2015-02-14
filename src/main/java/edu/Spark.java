@@ -3,9 +3,12 @@ package edu;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
 
+
 import java.util.HashMap;
 import java.util.Map;
 
+
+import edu.model.Model;
 import static spark.Spark.get;
 import static spark.Spark.post;
 
@@ -25,11 +28,22 @@ public class Spark {
         	String titulo = request.queryParams("titulo");
         	String descripcion = request.queryParams("descripcion");
         	        	
+        	Model m = new Model();
+        	Integer idSolicitud=m.createSolicitud(area, titulo, descripcion);
+        	
+        	
         	Map<String, Object> model = new HashMap<>();
-        	model.put("tituloSolicitud", "Información de la solicitud");
-       		model.put("area", area);
-       		model.put("titulo", titulo);
-       		model.put("descripcion", descripcion);
+        	
+        	if(idSolicitud != null){
+	        	model.put("tituloSolicitud", "Información de la solicitud");
+	        	model.put("idSolicitud", idSolicitud);
+	       		model.put("area", area);
+	       		model.put("titulo", titulo);
+	       		model.put("descripcion", descripcion);
+        	}else{
+        		model.put("mensaje", "La solicitud no fue creada.");
+        		
+        	}
        		return new ModelAndView(model, "versolicitud.wm");
             
         }, new VelocityTemplateEngine()); 
