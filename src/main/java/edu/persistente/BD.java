@@ -7,12 +7,30 @@ import edu.dto.Solicitud;
 
 public class BD {
 
-	public static List<Solicitud> solicitudes;
-	public static List<Integer> idsSolicitudes;
-	
-	{
-		solicitudes = new ArrayList<Solicitud>();
-		idsSolicitudes= new ArrayList<Integer>();
-		
+	private static List<Solicitud> solicitudes;
+	private static List<Integer> idsSolicitudes;
+
+	public static List<Solicitud> getSolicitudes() {
+		if (solicitudes == null) {
+			solicitudes = new ArrayList<Solicitud>();
+		}
+		return solicitudes;
+	}
+
+	public static List<Integer> getIdsSolicitudes() {
+		if (idsSolicitudes == null) {
+			idsSolicitudes = new ArrayList<Integer>();
+		}
+		return idsSolicitudes;
+	}
+
+	public static void addSolicitud(Solicitud solicitud) {
+		getSolicitudes().add(solicitud);
+
+	}
+
+	public static void addIdSolicitud(Integer id) {
+		getIdsSolicitudes().add(id);
+
 	}
 }

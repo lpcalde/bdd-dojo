@@ -21,7 +21,7 @@ public class Model {
 			solicitud.setTitulo(titulo);
 			solicitud.setDescripcion(descripcion);
 			
-			BD.solicitudes.add(solicitud);
+			BD.addSolicitud(solicitud);
 			
 			return idSolicitud;
 		
@@ -32,8 +32,8 @@ public class Model {
 	}
 	
 	public int getNextIdSolicitud(){
-		int id=	BD.idsSolicitudes.size()+1;
-		BD.idsSolicitudes.add(id);
+		int id=	BD.getIdsSolicitudes().size()+1;
+		BD.addIdSolicitud(id);
 		return id;
 	}
 }
