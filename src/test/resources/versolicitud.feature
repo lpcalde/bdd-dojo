@@ -5,14 +5,10 @@ Feature:
 
   Scenario:
     Given estoy en la pantalla ver solicitud
-    When y recibo el identificador "idSolicitud"
-    Then valido que el identificador "idSolicitud" no este vacio
+    When y recibo el identificador "idSolicitud", "titulo", "descripcion"
+    Then visualizo los datos en la pantalla
     
-  Scenario:
-    Given estoy en la pantalla ver solicitud
-    When y recibo el identificador "idSolicitud"
-    Then verifico que "idSolicitud" exista en la lista de solicitudes
-    
+ 
 
 
     
