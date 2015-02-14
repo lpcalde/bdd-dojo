@@ -22,18 +22,13 @@ public class Spark {
             return new ModelAndView(model, "index.wm");
         }, new VelocityTemplateEngine());
     	
-    	get("/crearSolicitud", (request, response) -> {
+    	get("/crearsolicitud", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             model.put("welcome", "Creación de Solicitudes");
             return new ModelAndView(model, "crearsolicitud.wm");
         }, new VelocityTemplateEngine());
     	
-    	get("/solicitudesregistradas", (request, response) -> {
-            Map<String, Object> model = new HashMap<>();
-            model.put("welcome", "Creación de Solicitudes");
-            return new ModelAndView(model, "solicitudesRegistradas.wm");
-        }, new VelocityTemplateEngine());
-    	
+       	
     	post("/versolicitud", (request, response) -> {
         	
         	String area = request.queryParams("area");
