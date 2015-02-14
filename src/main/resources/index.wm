@@ -4,10 +4,12 @@
 	<h1 id="welcome">${welcome}</h1>
 	<form action="/versolicitud" method="POST">
 		<table>
-		Area <input type="text" id="area" name="area" required ="true"/></br>
-		Titulo <input type="text" id="titulo" name="titulo" required ="true"/></br>
-		Descripcion <textarea rows="5" id="descripcion" name="descripcion" required ="true"></textarea></br>
-		<input type="submit" id="login" value="Login"/>
+			<tr>
+				<td><a href="\crearSolicitud">Crear Solicitud</></td> 
+			</tr>
+			<tr>
+				<td><a href="\solicitudesRegistradas">Ver Solicitudes Registradas</></td>
+			</tr>
 		</table>
 	</form>
 </body>
