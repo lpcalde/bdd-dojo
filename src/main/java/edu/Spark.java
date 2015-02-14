@@ -32,6 +32,13 @@ public class Spark {
        		model.put("descripcion", descripcion);
        		return new ModelAndView(model, "versolicitud.wm");
             
+        }, new VelocityTemplateEngine()); 
+    	
+    	
+    	get("/verlistado", (request, response) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("welcome", "Listado de Solicitudes");
+            return new ModelAndView(model, "listadosolicitudes.wm");
         }, new VelocityTemplateEngine());
 
     }
