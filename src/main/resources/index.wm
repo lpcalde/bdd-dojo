@@ -5,10 +5,11 @@
 	<form action="/versolicitud" method="POST">
 		<table>
 			<tr>
-				<td><a href="\crearsolicitud">Crear Solicitud</></td> 
+				<h1 id="crearSolicitud">crearSolicitud</h1>
+				<td id="crearSolicitud"><a href="\crearsolicitud" id="crearSolicitud">Crear Solicitud</></td> 
 			</tr>
 			<tr>
-				<td><a href="\verlistado">Ver Solicitudes Registradas</></td>
+				<td id="solicitudesRegistradas"><a href="\verlistado" id="solicitudesRegistradas">Ver Solicitudes Registradas</></td>
 			</tr>
 		</table>
 	</form>

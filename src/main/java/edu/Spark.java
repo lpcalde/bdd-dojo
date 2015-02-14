@@ -47,6 +47,7 @@ public class Spark {
 	       		model.put("area", area);
 	       		model.put("titulo", titulo);
 	       		model.put("descripcion", descripcion);
+	       		model.put("mensaje", "La solicitud no fue creada.");
         	}else{
         		model.put("mensaje", "La solicitud no fue creada.");
         		
